@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar el repositorio'){
             steps {
-                git branch: 'main', credentialsId: 'git-jenkins', url: 'https://github.com/samucran/contenerizacion-api-rest'
+                git branch: 'main', credentialsId: 'contenerizacion-api-rest', url: 'https://github.com/samucran/contenerizacion-api-rest'
             }
         }
         stage('Construir imagen de Docker'){
